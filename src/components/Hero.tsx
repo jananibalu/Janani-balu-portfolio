@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
 import { slideUp, slideRight, slideLeft } from '../utils/animation';
-import  janani  from '../assets/images/janani-img.png';
+import janani from '../assets/images/janani-img.png';
 
 
 const Hero: React.FC = () => {

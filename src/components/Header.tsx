@@ -99,12 +99,16 @@ const Header: React.FC = () => {
     // >
 
     <motion.header
-      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 bg-white dark:bg-primary-900 shadow-md' : 'py-5 bg-white dark:bg-primary-900'
+      className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${scrolled
+          ? 'bg-white dark:bg-primary-900 shadow-md py-4'
+          : 'bg-white dark:bg-primary-900 py-6'
         }`}
       initial={false}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.3 }}
+      style={{ height: 'auto' }}
     >
+  
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <motion.a

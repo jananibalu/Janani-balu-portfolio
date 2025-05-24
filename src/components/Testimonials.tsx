@@ -74,9 +74,7 @@ const Testimonials: React.FC = () => {
                       <h4 className="text-xl font-bold text-primary-800 dark:text-primary-100">
                         {testimonial.name}
                       </h4>
-                      <p className="text-primary-600 dark:text-primary-400">
-                        {testimonial.role}, {testimonial.company}
-                      </p>
+                     
                     </div>
                   </div>
                 </div>

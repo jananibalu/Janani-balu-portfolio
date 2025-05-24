@@ -12,7 +12,7 @@ const Contact: React.FC = () => {
     message: '',
   });
 
-  
+
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -60,16 +60,16 @@ const Contact: React.FC = () => {
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={slideRight()}
           >
-            <h3 className="text-2xl font-bold mb-6 text-primary-800 dark:text-primary-100">
-              Contact <span className="text-accent-500">Information</span>
+            <h3 className="text-2xl mt-28 font-bold mb-6 text-primary-800 dark:text-primary-100">
+              Contact <span className="text-accent-500">Information </span>
             </h3>
+
 
             <p className="text-primary-700 dark:text-primary-300 mb-8">
               Feel free to get in touch with me. I am always open to discussing new projects,

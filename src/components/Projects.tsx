@@ -7,15 +7,15 @@ import { slideUp, staggerContainer, staggerItem } from '../utils/animation';
 const Projects: React.FC = () => {
   const [filter, setFilter] = useState<string>('all');
   const categories = ['all', ...Array.from(new Set(projects.map(p => p.category)))];
-  
-  const filteredProjects = filter === 'all' 
-    ? projects 
+
+  const filteredProjects = filter === 'all'
+    ? projects
     : projects.filter(project => project.category === filter);
 
   return (
     <section id="projects" className="section">
       <div className="container-custom">
-        <motion.h2 
+        <motion.h2
           className="section-title"
           initial="hidden"
           whileInView="visible"
@@ -24,9 +24,9 @@ const Projects: React.FC = () => {
         >
           My <span className="text-accent-500">Projects</span>
         </motion.h2>
-        
+
         {/* Project Filters */}
-        <motion.div 
+        <motion.div
           className="flex flex-wrap justify-center gap-3 mb-12"
           initial="hidden"
           whileInView="visible"
@@ -39,19 +39,18 @@ const Projects: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setFilter(category)}
-              className={`px-5 py-2 rounded-full font-medium text-sm transition-colors ${
-                filter === category
+              className={`px-5 py-2 rounded-full font-medium text-sm transition-colors ${filter === category
                   ? 'bg-accent-500 text-white'
                   : 'bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-700'
-              }`}
+                }`}
             >
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </motion.button>
           ))}
         </motion.div>
-        
+
         {/* Projects Grid */}
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           variants={staggerContainer}
           initial="hidden"
@@ -61,6 +60,11 @@ const Projects: React.FC = () => {
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+              // key={project.id}
               className="card group h-full flex flex-col"
               variants={staggerItem}
               whileHover={{ y: -10 }}
@@ -85,7 +89,7 @@ const Projects: React.FC = () => {
                   {project.category}
                 </div>
               </div>
-              
+
               <div className="p-6 flex-grow flex flex-col">
                 <h3 className="text-xl font-bold text-primary-800 dark:text-primary-100 mb-2">
                   {project.title}

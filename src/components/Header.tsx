@@ -82,17 +82,34 @@ const Header: React.FC = () => {
   };
 
   return (
+    
+
+    
+    
+    // <motion.header
+    //   className={`fixed w-full z-50 transition-all duration-300 
+    //     ${isOpen
+    //       ? 'bg-white dark:bg-primary-900 py-4 shadow-md'
+    //       : scrolled
+    //         ? 'py-3 glassmorphism shadow-md'
+    //         : 'py-5 bg-transparent'}`}
+    //   initial="hidden"
+    //   animate="visible"
+    //   variants={headerVariants}
+    // >
+
     <motion.header
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 glassmorphism shadow-md' : 'py-5 bg-transparent'
+      className={`fixed top-0 left-0 right-0 w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 bg-white dark:bg-primary-900 shadow-md' : 'py-5 bg-white dark:bg-primary-900'
         }`}
-      initial="hidden"
-      animate="visible"
-      variants={headerVariants}
+      initial={false}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.3 }}
     >
-      <div className="container-custom flex items-center justify-between">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <motion.a
           href="#home"
-          className="text-2xl font-bold text-primary-800 dark:text-white"
+          className="text-2xl md:text-xl font-bold text-primary-800 dark:text-white"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -100,7 +117,7 @@ const Header: React.FC = () => {
         </motion.a>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center space-x-6 lg:space-x-8 text-base md:text-sm">
           {navigation.map((item) => (
             <a
               key={item.id}
@@ -136,13 +153,20 @@ const Header: React.FC = () => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 bg-white dark:bg-primary-900 z-40 md:hidden pt-24"
+            className="fixed inset-0 bg-white dark:bg-primary-900 z-40 pt-20 w-full md:hidden"
             initial="hidden"
             animate="visible"
             exit="exit"
             variants={menuVariants}
           >
-            <nav className="container-custom flex flex-col space-y-6 p-6">
+            {/* Close Button Inside Menu */}
+            <div className="absolute top-4 right-6">
+              <button onClick={() => setIsOpen(false)}>
+                <X size={28} className="text-primary-800 dark:text-white" />
+              </button>
+            </div>
+
+            <nav className="max-w-7xl mx-auto px-6 flex flex-col space-y-6 mt-6">
               {navigation.map((item, i) => (
                 <motion.a
                   key={item.id}

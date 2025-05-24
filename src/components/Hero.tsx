@@ -7,7 +7,7 @@ import  janani  from '../assets/images/janani-img.png';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center pt-16 pb-12">
+    <section id="home" className="min-h-screen flex items-center pt-20 mt-8 pb-12">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Text Content */}

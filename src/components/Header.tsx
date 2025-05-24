@@ -100,7 +100,7 @@ const Header: React.FC = () => {
 
     <motion.header
       className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${scrolled
-          ? 'bg-white dark:bg-primary-900 shadow-md py-4'
+          ? 'bg-white dark:bg-primary-900 shadow-md py-5 pt-5'
           : 'bg-white dark:bg-primary-900 py-6'
         }`}
       initial={false}
@@ -110,7 +110,7 @@ const Header: React.FC = () => {
     >
   
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto pt-3 px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         <motion.a
           href="#home"
           className="text-2xl md:text-xl font-bold text-primary-800 dark:text-white"

@@ -37,7 +37,7 @@ const About: React.FC = () => {
               Professional <span className="text-accent-500">Bio</span>
             </h3>
 
-            <p className="text-primary-700 dark:text-primary-300 mb-6">
+            {/* <p className="text-primary-700 dark:text-primary-300 mb-6">
               I'm a passionate Frontend  developer and designer with over 2 years of experience
               creating beautiful, functional, and user-centered digital experiences. I believe
               in crafting clean, efficient code and intuitive designs that provide exceptional
@@ -49,8 +49,19 @@ const About: React.FC = () => {
               a diverse set of skills and perspectives to every project. My goal is always to
               build products that are not only visually appealing but also functionally robust
               and aligned with business objectives.
+            </p> */}
+            <p>
+              I'm Janani Balu, a passionate Frontend Developer with 2 years of experience building responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and React, and I love turning creative ideas into clean and functional user interfaces.
             </p>
-
+            <p>
+              Currently based in Chennai, I’ve worked on real-time projects that involved both frontend tasks and team collaboration. I enjoy learning new technologies, solving UI/UX problems, and continuously improving my skills.
+            </p>
+            <p>
+              When I'm not coding, you’ll probably find me exploring new design trends, doing a bit of gym training, or sipping coffee while learning something new on YouTube.
+            </p>
+            <p>
+              I'm actively looking for opportunities where I can contribute, learn, and grow as a frontend engineer. Let’s connect!
+            </p>
             <div className="grid grid-cols-2 gap-6">
               <div className="flex items-center">
                 <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-full text-accent-500 mr-3">
@@ -88,7 +99,7 @@ const About: React.FC = () => {
                 </div>
                 <div>
                   <h4 className="font-bold text-primary-800 dark:text-primary-100">Projects</h4>
-                  <p className="text-sm text-primary-600 dark:text-primary-400">5+ Completed</p>
+                  <p className="text-sm text-primary-600 dark:text-primary-400">10+ Completed</p>
                 </div>
               </div>
             </div>

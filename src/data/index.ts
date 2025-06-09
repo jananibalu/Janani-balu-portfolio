@@ -39,7 +39,7 @@ export const projects: Project[] = [
   },
   {
     id: 4,
-    title: 'Astro Tour Booking',
+    title: 'Tour Booking',
     description: 'A feature-rich travel website offering destination packages, booking services, and promotional offers with an intuitive user interface.',
     image: 'https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg',
     category: 'Web Applications',
@@ -154,11 +154,11 @@ export const services: Service[] = [
 
 export const skills: Skill[] = [
   { id: 1, name: 'HTML5', level: 95, category: 'frontend' },
-  { id: 2, name: 'CSS3', level: 90, category: 'frontend' },
+  { id: 2, name: 'CSS3', level: 95, category: 'frontend' },
   { id: 3, name: 'JavaScript', level: 92, category: 'frontend' },
-  { id: 4, name: 'bootstrap', level: 88, category: 'frontend' },
-  { id: 4, name: 'React', level: 88, category: 'frontend' },
-  { id: 5, name: 'Redux', level: 85, category: 'frontend' },
+  { id: 4, name: 'bootstrap', level: 95, category: 'frontend' },
+  { id: 4, name: 'React', level: 90, category: 'frontend' },
+  { id: 5, name: 'Redux', level: 90, category: 'frontend' },
   { id: 7, name: 'Node.js', level: 85, category: 'frontend' },
   // { id: 8, name: 'Express', level: 82, category: 'backend' },
   // { id: 9, name: 'MongoDB', level: 78, category: 'backend' },

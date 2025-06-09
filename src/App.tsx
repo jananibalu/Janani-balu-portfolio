@@ -37,6 +37,16 @@ function App() {
     return () => window.removeEventListener('scroll', updateTitle);
   }, []);
 
+  useEffect(() => {
+    const handleContextmenu = (e: { preventDefault: () => void; }) => {
+      e.preventDefault()
+    }
+    document.addEventListener('contextmenu', handleContextmenu)
+    return function cleanup() {
+      document.removeEventListener('contextmenu', handleContextmenu)
+    }
+  }, [])
+  
   return (
     <div className="antialiased">
       <Header />

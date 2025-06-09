@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 1, duration: 0.5 }}
               >
-                <span className="font-bold text-2xl text-accent-500">5+</span>
+                <span className="font-bold text-2xl text-accent-500">10+</span>
                 <p className="text-xs text-primary-600 dark:text-primary-300">Projects Completed</p>
               </motion.div>
             </div>

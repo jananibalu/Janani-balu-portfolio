@@ -1,4 +1,20 @@
-import { Project, Testimonial, Service, Skill, NavLink } from '../types';
+import { Project, Testimonial, Service, NavLink } from '../types';
+import react from "../assets/images/react.png";
+import html from "../assets/images/html.png";
+import bootstrap from "../assets/images/bootstrap.png";
+import redux from "../assets/images/redux.png";
+import css from "../assets/images/css-3.png";
+import figma from "../assets/images/figma.png";
+import git from "../assets/images/git.png";
+import node from "../assets/images/node-js.png";
+import javascript from "../assets/images/javascript.png";
+import typescript from "../assets/images/typescript.png";
+
+
+
+
+
+
 
 export const navigation: NavLink[] = [
   { id: 'home', label: 'Home', href: '#home' },
@@ -152,21 +168,81 @@ export const services: Service[] = [
   },
 ];
 
-export const skills: Skill[] = [
-  { id: 1, name: 'HTML5', level: 95, category: 'frontend' },
-  { id: 2, name: 'CSS3', level: 95, category: 'frontend' },
-  { id: 3, name: 'JavaScript', level: 92, category: 'frontend' },
-  { id: 4, name: 'bootstrap', level: 95, category: 'frontend' },
-  { id: 4, name: 'React', level: 90, category: 'frontend' },
-  { id: 5, name: 'Redux', level: 90, category: 'frontend' },
-  { id: 7, name: 'Node.js', level: 85, category: 'frontend' },
-  // { id: 8, name: 'Express', level: 82, category: 'backend' },
-  // { id: 9, name: 'MongoDB', level: 78, category: 'backend' },
-  // { id: 10, name: 'PostgreSQL', level: 75, category: 'backend' },
-  // { id: 11, name: 'UI Design', level: 88, category: 'design' },
-  // { id: 12, name: 'UX Design', level: 86, category: 'design' },
-  { id: 13, name: 'Figma', level: 90, category: 'frontend' },
-  { id: 15, name: 'Git', level: 88, category: 'frontend' },
-  // { id: 17, name: 'AWS', level: 70, category: 'tools' },
-  // { id: 18, name: 'CI/CD', level: 72, category: 'tools' },
+// export const skills: Skill[] = [
+//   { id: 1, name: 'HTML5', level: 95, category: 'frontend', icon:{science} },
+//   { id: 2, name: 'CSS3', level: 95, category: 'frontend' },
+//   { id: 3, name: 'JavaScript', level: 92, category: 'frontend' },
+//   { id: 4, name: 'bootstrap', level: 95, category: 'frontend' },
+//   { id: 4, name: 'React', level: 90, category: 'frontend' },
+//   { id: 5, name: 'Redux', level: 90, category: 'frontend' },
+//   { id: 7, name: 'Node.js', level: 85, category: 'frontend' },
+//   { id: 13, name: 'Figma', level: 90, category: 'frontend' },
+//   { id: 15, name: 'Git', level: 88, category: 'frontend' },
+// ];
+
+
+export const skills = [
+  {
+    id: 1,
+    name: 'HTML5',
+    icon: html,
+    category: 'frontend',
+  },
+  {
+    id: 2,
+    name: 'CSS3',
+    icon: css,
+    category: 'frontend',
+  },
+  {
+    id: 3,
+    name: 'Bootstrap',
+    icon: bootstrap,
+    category: 'frontend',
+  },
+  {
+    id: 4,
+    name: 'JavaScript',
+    icon: javascript,
+    category: 'frontend',
+  },
+  {
+    id: 5,
+    name: 'React.js',
+    icon: react,
+    category: 'frontend'
+  },
+  {
+    id: 6,
+    name: 'typescript',
+    icon: typescript,
+    category: 'frontend',
+  },
+  {
+    id: 7,
+    name: 'redux',
+    icon: redux,
+    category: 'frontend',
+  },
+  {
+    id: 8,
+    name: 'figma',
+    icon: figma,
+    category: 'frontend',
+  },
+  {
+    id: 9,
+    name: 'git',
+    icon: git,
+    category: 'frontend',
+  },
+  {
+    id: 10,
+    name: 'node',
+    icon: node,
+    category: 'frontend',
+  },
+
 ];
+
+

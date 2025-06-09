@@ -1,15 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { BookOpen, Coffee, Award, Briefcase } from 'lucide-react';
+import { BookOpen, Coffee, Briefcase } from 'lucide-react';
 import { skills } from '../data';
 // import { slideUp, slideRight, slideLeft, staggerContainer, staggerItem } from '../utils/animation';
-import { slideUp, slideRight, slideLeft, staggerContainer, staggerItem } from '../utils/animation';
+import { slideUp, slideRight, slideLeft } from '../utils/animation';
 
 
 const About: React.FC = () => {
   const frontendSkills = skills.filter(skill => skill.category === 'frontend');
-  const backendSkills = skills.filter(skill => skill.category === 'backend');
-  const designSkills = skills.filter(skill => skill.category === 'design');
 
 
   return (
@@ -37,19 +35,6 @@ const About: React.FC = () => {
               Professional <span className="text-accent-500">Bio</span>
             </h3>
 
-            {/* <p className="text-primary-700 dark:text-primary-300 mb-6">
-              I'm a passionate Frontend  developer and designer with over 2 years of experience
-              creating beautiful, functional, and user-centered digital experiences. I believe
-              in crafting clean, efficient code and intuitive designs that provide exceptional
-              user experiences.
-            </p>
-
-            <p className="text-primary-700 dark:text-primary-300 mb-8">
-              Having worked with clients ranging from startups to large corporations, I bring
-              a diverse set of skills and perspectives to every project. My goal is always to
-              build products that are not only visually appealing but also functionally robust
-              and aligned with business objectives.
-            </p> */}
             <p>
               I'm Janani Balu, a passionate Frontend Developer with 2 years of experience building responsive, user-friendly websites and web applications. I specialize in HTML, CSS, JavaScript, and React, and I love turning creative ideas into clean and functional user interfaces.
             </p>
@@ -82,17 +67,6 @@ const About: React.FC = () => {
                   <p className="text-sm text-primary-600 dark:text-primary-400">2+ Years</p>
                 </div>
               </div>
-
-              {/* <div className="flex items-center">
-                <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-full text-accent-500 mr-3">
-                  <Award size={20} />
-                </div>
-                <div>
-                  <h4 className="font-bold text-primary-800 dark:text-primary-100">Awards</h4>
-                  <p className="text-sm text-primary-600 dark:text-primary-400">Best Designer 2022</p>
-                </div>
-              </div> */}
-
               <div className="flex items-center">
                 <div className="p-3 bg-accent-100 dark:bg-accent-900/30 rounded-full text-accent-500 mr-3">
                   <Briefcase size={20} />
@@ -105,88 +79,38 @@ const About: React.FC = () => {
             </div>
           </motion.div>
 
-          {/* Skills */}
           <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={slideLeft()}
           >
-            <h3 className="text-2xl font-bold mb-6 text-primary-800 dark:text-primary-100">
+            <h3 className="text-2xl text-center font-bold mb-6 text-primary-800 dark:text-primary-100">
               My <span className="text-accent-500">Skills</span>
             </h3>
 
-            <div className="space-y-8">
-              <div>
-                <h4 className="text-lg font-semibold mb-3 text-primary-800 dark:text-primary-200">Frontend Development</h4>
-                <div className="space-y-4">
-                  {frontendSkills.map((skill) => (
-                    <div key={skill.id}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-primary-700 dark:text-primary-300">{skill.name}</span>
-                        <span className="text-primary-700 dark:text-primary-300">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-primary-200 dark:bg-primary-700 rounded-full h-2">
-                        <motion.div
-                          className="bg-accent-500 h-2 rounded-full"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: 0.2 }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* <div>
-                <h4 className="text-lg font-semibold mb-3 text-primary-800 dark:text-primary-200">Backend Development</h4>
-                <div className="space-y-4">
-                  {backendSkills.slice(0, 2).map((skill) => (
-                    <div key={skill.id}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-primary-700 dark:text-primary-300">{skill.name}</span>
-                        <span className="text-primary-700 dark:text-primary-300">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-primary-200 dark:bg-primary-700 rounded-full h-2">
-                        <motion.div
-                          className="bg-accent-500 h-2 rounded-full"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: 0.2 }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
-              {/* 
-              <div>
-                <h4 className="text-lg font-semibold mb-3 text-primary-800 dark:text-primary-200">Design</h4>
-                <div className="space-y-4">
-                  {designSkills.slice(0, 2).map((skill) => (
-                    <div key={skill.id}>
-                      <div className="flex justify-between mb-1">
-                        <span className="text-primary-700 dark:text-primary-300">{skill.name}</span>
-                        <span className="text-primary-700 dark:text-primary-300">{skill.level}%</span>
-                      </div>
-                      <div className="w-full bg-primary-200 dark:bg-primary-700 rounded-full h-2">
-                        <motion.div
-                          className="bg-accent-500 h-2 rounded-full"
-                          initial={{ width: 0 }}
-                          whileInView={{ width: `${skill.level}%` }}
-                          viewport={{ once: true }}
-                          transition={{ duration: 1, delay: 0.2 }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div> */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+              {frontendSkills.map((skill, index) => (
+                <motion.div
+                  key={skill.id}
+                  className={`animate-slide-fade flex flex-col items-center justify-center p-4 rounded-xl shadow-md bg-white dark:bg-primary-800 
+        transition-transform duration-300 hover:scale-105 hover:animate-pulse-shadow`}
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className="w-12 h-12">
+                    <img
+                      src={skill.icon}
+                      alt={skill.name}
+                      className="w-full h-full object-contain"
+                    />
+                  </div>
+                </motion.div>
+              ))}
             </div>
+
+
           </motion.div>
+
         </div>
       </div>
     </section>

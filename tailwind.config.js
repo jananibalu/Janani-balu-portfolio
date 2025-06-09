@@ -46,8 +46,19 @@ export default {
         'fade-in': 'fadeIn 0.5s ease-in-out',
         'slide-up': 'slideUp 0.5s ease-in-out',
         'slide-down': 'slideDown 0.5s ease-in-out',
+        'slide-fade': 'slideFade 0.6s ease-out forwards',
+        'pulse-shadow': 'pulseShadow 2s infinite',
+        
       },
       keyframes: {
+        slideFade: {
+          '0%': { transform: 'translateY(30px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+        pulseShadow: {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(0, 0, 0, 0)' },
+          '50%': { boxShadow: '0 0 10px 4px rgba(59, 130, 246, 0.5)' },
+        },
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
@@ -67,4 +78,6 @@ export default {
     },
   },
   plugins: [],
+
 };
+

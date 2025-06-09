@@ -38,7 +38,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    const handleContextmenu = (e: { preventDefault: () => void; }) => {
+    const handleContextmenu = e => {
       e.preventDefault()
     }
     document.addEventListener('contextmenu', handleContextmenu)
@@ -46,7 +46,7 @@ function App() {
       document.removeEventListener('contextmenu', handleContextmenu)
     }
   }, [])
-  
+
   return (
     <div className="antialiased">
       <Header />

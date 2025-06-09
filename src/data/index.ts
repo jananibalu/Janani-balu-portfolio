@@ -9,7 +9,11 @@ import git from "../assets/images/git.png";
 import node from "../assets/images/node-js.png";
 import javascript from "../assets/images/javascript.png";
 import typescript from "../assets/images/typescript.png";
-
+import blockchani from "../assets/images/blockchani.jpg";
+import medi from "../assets/images/medi-cal.jpg";
+import japanese from "../assets/images/japanese.jpg";
+import dm from "../assets/images/dm.jpg";
+import tour from "../assets/images/tour.jpg";
 
 
 
@@ -30,7 +34,7 @@ export const projects: Project[] = [
     id: 1,
     title: 'Blockchain-Based Crypto Tracking System',
     description: 'A decentralized platform designed to track and display cryptocurrency transactions in real-time using blockchain technology, ensuring transparency and security.',
-    image: 'https://images.pexels.com/photos/8353791/pexels-photo-8353791.jpeg',
+    image: blockchani,
     category: 'Web Applications',
     technologies: ['React.js', 'TypeScript', 'Redux', 'CSS3', 'HTML5'],
     url: '#',
@@ -39,7 +43,7 @@ export const projects: Project[] = [
     id: 2,
     title: 'Medi-cal Calculator Application',
     description: 'A responsive medical web app that allows healthcare professionals to perform complex dosage and clinical calculations quickly and accurately.',
-    image: 'https://images.pexels.com/photos/3738937/pexels-photo-3738937.jpeg',
+    image: medi,
     category: 'Web Applications',
     technologies: ['React.js', 'TypeScript', 'Redux', 'CSS3', 'HTML5'],
     url: '#',
@@ -57,7 +61,7 @@ export const projects: Project[] = [
     id: 4,
     title: 'Tour Booking',
     description: 'A feature-rich travel website offering destination packages, booking services, and promotional offers with an intuitive user interface.',
-    image: 'https://images.pexels.com/photos/1008155/pexels-photo-1008155.jpeg',
+    image: tour,
     category: 'Web Applications',
     technologies: ['React.js', 'JavaScript', 'CSS3', 'HTML5'],
     url: '#',
@@ -75,7 +79,7 @@ export const projects: Project[] = [
     id: 6,
     title: 'Digital Marketing Website',
     description: 'A clean and professional website that showcases digital marketing solutions, service offerings, and company achievements with responsive design.',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
+    image: dm,
     category: 'Static Websites',
     technologies: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript'],
     url: '#',
@@ -84,7 +88,7 @@ export const projects: Project[] = [
     id: 7,
     title: 'Japanese Online Test',
     description: 'An online examination platform for Japanese language students, supporting registration, hall ticket generation, and exam tracking.',
-    image: 'https://images.pexels.com/photos/590587/pexels-photo-590587.jpeg',
+    image: japanese,
     category: 'Web Applications',
     technologies: ['React.js', 'JavaScript', 'CSS3', 'HTML5'],
     url: '#',
@@ -103,20 +107,6 @@ export const projects: Project[] = [
 
 
 export const testimonials: Testimonial[] = [
-  // {
-  //   id: 1,
-  //   name: 'Vinoth Kumar',
-  //   role: 'CEO',
-  //   avatar: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   content: 'Working with Janani was an absolute pleasure. She delivered our website ahead of schedule and exceeded all expectations. Her attention to detail and creative solutions made our project stand out.',
-  // },
-  // {
-  //   id: 2,
-  //   name: 'Priya Sharma',
-  //   role: 'Marketing Director',
-  //   avatar: 'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-  //   content: 'Janani’s expertise in both design and development made our collaboration seamless. She understood our vision immediately and transformed it into a beautiful, functional website that has significantly increased our conversions.',
-  // },
   {
     id: 3,
     name: 'Ravi Narayanan',

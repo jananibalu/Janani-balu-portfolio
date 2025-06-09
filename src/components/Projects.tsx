@@ -25,7 +25,6 @@ const Projects: React.FC = () => {
           My <span className="text-accent-500">Projects</span>
         </motion.h2>
 
-        {/* Project Filters */}
         <motion.div
           className="flex flex-wrap justify-center gap-3 mb-12"
           initial="hidden"
@@ -33,6 +32,7 @@ const Projects: React.FC = () => {
           viewport={{ once: true }}
           variants={slideUp(0.1)}
         >
+
           {categories.map((category) => (
             <motion.button
               key={category}
@@ -40,10 +40,11 @@ const Projects: React.FC = () => {
               whileTap={{ scale: 0.95 }}
               onClick={() => setFilter(category)}
               className={`px-5 py-2 rounded-full font-medium text-sm transition-colors ${filter === category
-                  ? 'bg-accent-500 text-white'
-                  : 'bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-700'
+                ? 'bg-accent-500 text-white'
+                : 'bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:bg-primary-200 dark:hover:bg-primary-700'
                 }`}
             >
+
               {category.charAt(0).toUpperCase() + category.slice(1)}
             </motion.button>
           ))}
@@ -57,6 +58,7 @@ const Projects: React.FC = () => {
           whileInView="visible"
           viewport={{ once: true }}
         >
+
           {filteredProjects.map((project) => (
             <motion.div
               key={project.id}
@@ -69,6 +71,7 @@ const Projects: React.FC = () => {
               variants={staggerItem}
               whileHover={{ y: -10 }}
             >
+
               <div className="relative overflow-hidden h-60">
                 <img
                   src={project.image}

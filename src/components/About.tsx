@@ -59,7 +59,7 @@ const About: React.FC = () => {
             <p>
               When I'm not coding, you’ll probably find me exploring new design trends, doing a bit of gym training, or sipping coffee while learning something new on YouTube.
             </p>
-            <p>
+            <p className='mb-5'>
               I'm actively looking for opportunities where I can contribute, learn, and grow as a frontend engineer. Let’s connect!
             </p>
             <div className="grid grid-cols-2 gap-6">

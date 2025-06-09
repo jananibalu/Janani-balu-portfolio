@@ -1,8 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Github, Linkedin, Twitter } from 'lucide-react';
-import { slideUp, slideRight, slideLeft } from '../utils/animation';
+import { ArrowRight, Github, Linkedin, Instagram } from 'lucide-react';
+import { slideUp, slideLeft } from '../utils/animation';
 import janani from '../assets/images/janani-img.png';
+import jananiResume from '../Janani-Balu-frontend-developer.pdf';
 
 
 const Hero: React.FC = () => {
@@ -11,6 +12,7 @@ const Hero: React.FC = () => {
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row items-center gap-12">
           {/* Text Content */}
+
           <motion.div
             className="lg:w-1/2 text-center lg:text-left"
             initial="hidden"
@@ -52,11 +54,13 @@ const Hero: React.FC = () => {
               >
                 Contact Me <ArrowRight size={18} className="ml-2" />
               </a>
+
               <a
-                href="#projects"
+                href={jananiResume}
+                download
                 className="btn btn-secondary"
               >
-                View My Work
+                Download my resume
               </a>
             </motion.div>
 
@@ -65,7 +69,7 @@ const Hero: React.FC = () => {
               variants={slideUp(0.5)}
             >
               <a
-                href="https://github.com"
+                href="https://github.com/jananibalu"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
@@ -74,7 +78,7 @@ const Hero: React.FC = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/janani-balu-86a31923b/"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
@@ -83,13 +87,13 @@ const Hero: React.FC = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/_zenjb"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
-                aria-label="Twitter"
+                aria-label="Instagram"
               >
-                <Twitter size={24} />
+                <Instagram size={24} />
               </a>
             </motion.div>
           </motion.div>

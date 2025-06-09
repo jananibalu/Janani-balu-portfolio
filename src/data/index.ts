@@ -21,7 +21,7 @@ export const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Medical Calculator Application',
+    title: 'Medi-cal Calculator Application',
     description: 'A responsive medical web app that allows healthcare professionals to perform complex dosage and clinical calculations quickly and accurately.',
     image: 'https://images.pexels.com/photos/3738937/pexels-photo-3738937.jpeg',
     category: 'Web Applications',

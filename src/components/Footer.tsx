@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, ChevronUp, Github, Linkedin, Twitter } from 'lucide-react';
+import { Heart, ChevronUp, Github, Linkedin, Instagram } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Footer: React.FC = () => {
@@ -23,31 +23,31 @@ const Footer: React.FC = () => {
           <div className="flex flex-col items-center md:items-end">
             <div className="flex space-x-4 mb-4">
               <a
-                href="https://github.com"
+                href="https://github.com/jananibalu"
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 rounded-full bg-primary-800 hover:bg-accent-500 transition-colors"
+                className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
                 aria-label="GitHub"
               >
-                <Github size={20} />
+                <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/janani-balu-86a31923b/"
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 rounded-full bg-primary-800 hover:bg-accent-500 transition-colors"
+                className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={20} />
+                <Linkedin size={24} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://www.instagram.com/_zenjb"
                 target="_blank"
                 rel="noreferrer"
-                className="p-2 rounded-full bg-primary-800 hover:bg-accent-500 transition-colors"
-                aria-label="Twitter"
+                className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"
+                aria-label="Instagram"
               >
-                <Twitter size={20} />
+                <Instagram size={24} />
               </a>
             </div>
 

@@ -9,12 +9,16 @@ import git from "../assets/images/git.png";
 import node from "../assets/images/node-js.png";
 import javascript from "../assets/images/javascript.png";
 import typescript from "../assets/images/typescript.png";
-import blockchani from "../assets/images/blockchani.jpg";
-import medi from "../assets/images/medi-cal.jpg";
-import japanese from "../assets/images/japanese.jpg";
-import dm from "../assets/images/dm.jpg";
-import tour from "../assets/images/tour.jpg";
+import blockchani from "../assets/images/blockchani.png";
+import medi from "../assets/images/medi-cal.png";
+import japanese from "../assets/images/japanese.png";
+import dm from "../assets/images/dm.png";
+import tour from "../assets/images/tour.png";
 import todo from "../assets/images/to-do.png";
+import finaxis from "../assets/images/fin-aix.png";
+import courier from "../assets/images/courier.png";
+
+
 
 
 
@@ -39,16 +43,6 @@ export const projects: Project[] = [
     technologies: ['React.js', 'TypeScript', 'Redux', 'Bootstrap 5', 'CSS3'],
     url: 'https://trackwise-to-do.vercel.app/',
   },
-  
-  {
-    id: 1,
-    title: 'Blockchain-Based Crypto Tracking System',
-    description: 'A decentralized platform designed to track and display cryptocurrency transactions in real-time using blockchain technology, ensuring transparency and security.',
-    image: blockchani,
-    category: 'Web Applications',
-    technologies: ['React.js', 'TypeScript', 'Redux', 'CSS3', 'HTML5'],
-    url: '#',
-  },
   {
     id: 2,
     title: 'Medi-cal Calculator Application',
@@ -56,13 +50,23 @@ export const projects: Project[] = [
     image: medi,
     category: 'Web Applications',
     technologies: ['React.js', 'TypeScript', 'Redux', 'CSS3', 'HTML5'],
-    url: '#',
+    url: 'https://medicalculator.in/',
   },
+  {
+    id: 1,
+    title: 'Blockchain-Based Crypto Tracking System',
+    description: 'A decentralized platform designed to track and display cryptocurrency transactions in real-time using blockchain technology, ensuring transparency and security.',
+    image: blockchani,
+    category: 'Web Applications',
+    technologies: ['React.js', 'TypeScript', 'Redux', 'CSS3', 'HTML5'],
+    url: 'https://trace3.0.com/',
+  },
+
   {
     id: 3,
     title: 'Fin Aixs – Stock Details & Bot',
     description: 'A modern finance dashboard that provides real-time stock updates and integrates an automated trading bot for seamless portfolio management.',
-    image: 'https://images.pexels.com/photos/210607/pexels-photo-210607.jpeg',
+    image: finaxis,
     category: 'Web Applications',
     technologies: ['React.js', 'JavaScript', 'CSS3', 'HTML5'],
     url: '#',
@@ -101,13 +105,13 @@ export const projects: Project[] = [
     image: japanese,
     category: 'Web Applications',
     technologies: ['React.js', 'JavaScript', 'CSS3', 'HTML5'],
-    url: '#',
+    url: 'https://jotsouthindia.com/',
   },
   {
     id: 8,
     title: 'Courier Services Website',
     description: 'A simple and informative website for a courier company, providing tracking features, contact info, and service highlights.',
-    image: 'https://images.pexels.com/photos/4246120/pexels-photo-4246120.jpeg',
+    image: courier,
     category: 'Static Websites',
     technologies: ['HTML5', 'CSS3', 'Bootstrap 5', 'JavaScript'],
     url: '#',

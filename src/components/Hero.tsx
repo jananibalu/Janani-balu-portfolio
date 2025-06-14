@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="https://www.instagram.com/_zenjb"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="p-2 rounded-full bg-primary-100 dark:bg-primary-800 text-primary-700 dark:text-primary-300 hover:text-accent-500 dark:hover:text-accent-400 transition-colors"

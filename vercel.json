@@ -1,5 +1,12 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "framework": "vite"
+  "framework": "vite",
+  
+  "functions": {
+    "api/contact.ts": {
+      "memory": 128,
+      "maxDuration": 10
+    }
+  }
 }

@@ -14,8 +14,7 @@ import medi from "../assets/images/medi-cal.jpg";
 import japanese from "../assets/images/japanese.jpg";
 import dm from "../assets/images/dm.jpg";
 import tour from "../assets/images/tour.jpg";
-
-
+import todo from "../assets/images/to-do.png";
 
 
 
@@ -30,6 +29,17 @@ export const navigation: NavLink[] = [
 ];
 
 export const projects: Project[] = [
+
+  {
+    id: 9,
+    title: 'TrackWise – Task Management Web App',
+    description: 'A clean and responsive to-do application that allows users to create, manage, filter, and search tasks with light and dark mode support. Built using modern React and Redux patterns with a focus on UI accessibility and theme customization.',
+    image: todo, // Replace with your actual app screenshot or hero image URL
+    category: 'Web Applications',
+    technologies: ['React.js', 'TypeScript', 'Redux', 'Bootstrap 5', 'CSS3'],
+    url: 'https://trackwise-to-do.vercel.app/',
+  },
+  
   {
     id: 1,
     title: 'Blockchain-Based Crypto Tracking System',
